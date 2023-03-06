@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+$gold-color: #d0a760;
+$black-color: #000;
+$white-color: #fff;
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Merienda One", cursive, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-y: hidden;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body {
+    background-color: $black-color;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .btn-wrapper {
+        button {
+            border: 1px solid $gold-color;
+            border-radius: 50px;
+            font-size: 24px;
+            padding: 0px 16px;
+            background-color: $black-color;
+            color: $gold-color;
+            &:hover {
+                background-color: $gold-color;
+                color: $black-color;
+            }
+        }
+    }
+}
+.banner-wrapper {
+    position: relative;
+    overflow: hidden;
+    img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .content {
+        position: absolute;
+        top: 30%;
+        p {
+            font-size: 32px;
+            color: $white-color;
+            max-width: 450px;
+        }
+        span {
+            font-size: 18px;
+            color: $white-color;
+            text-decoration: underline;
+        }
+    }
+}
+.list-wrapper {
+    .box-wrapper {
+        margin-top: 50px;
+        h2 {
+            font-size: 36px;
+            color: $gold-color;
+        }
+        hr {
+            border: 1px solid $gold-color;
+            margin-bottom: 40px;
+        }
+        label {
+            font-size: 14px;
+            color: $gold-color;
+        }
+        input {
+            margin-bottom: 40px;
+            background: $black-color;
+            border: 1px solid $gold-color;
+            border-radius: 50px;
+            color: $gold-color;
+            padding: 8px 16px;
+            color-scheme: dark;
+            font-size: 14px;
+        }
+        .card-wrapper {
+            .box {
+                display: flex;
+                align-items: center;
+                border: 1px solid $gold-color;
+                border-radius: 15px;
+                margin-bottom: 15px;
+                padding: 15px;
+                img {
+                    width: 200px;
+                }
+                .content {
+                    margin-left: 30px;
+                    p {
+                        color: $gold-color;
+                        font-size: 16px;
+                    }
+                    h3 {
+                        color: $gold-color;
+                        font-size: 36px;
+                    }
+                }
+                &.active {
+                    background-color: $gold-color;
+                    .content {
+                        p {
+                            color: $black-color;
+                        }
+                        h3 {
+                            color: $black-color;
+                        }
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                padding: 8px 16px;
+                border: 1px solid $gold-color;
+                border-radius: 50px;
+                font-size: 14px;
+                background-color: $black-color;
+                color: $gold-color;
+                &:hover {
+                    background-color: $gold-color;
+                    color: $black-color;
+                }
+            }
+        }
+    }
+}
+.modal-content {
+    background-color: $black-color;
+    button {
+        border: 1px solid $gold-color;
+        border-radius: 50px;
+        font-size: 14px;
+        padding: 3px 16px;
+        background-color: $black-color;
+        color: $gold-color;
+        &:hover {
+            background-color: $gold-color;
+            color: $black-color;
+        }
+    }
+}
+.modal-title {
+    color: $white-color;
+}
+.modal-footer {
+    border-top: 0;
+}
+.form-wrapper {
+    background-color: $black-color;
+    margin-top: 30px;
+    .input-wrapper {
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            padding: 8px 16px;
+            border: 1px solid $gold-color;
+            background-color: $black-color;
+            font-size: 14px;
+            color: $gold-color;
+            outline: none;
+            &::placeholder {
+                color: $gold-color;
+            }
+        }
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            padding: 8px 16px;
+            border: 1px solid $gold-color;
+            background-color: $black-color;
+            font-size: 14px;
+            color: $gold-color;
+            outline: none;
+            &::placeholder {
+                color: $gold-color;
+            }
+        }
+    }
+}
